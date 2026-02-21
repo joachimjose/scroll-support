@@ -148,6 +148,24 @@
       padding: 2rem;
     }
 
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.85rem 2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+
+    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+
     /* PRIVACY POLICY */
     .policy-body {
       background: var(--surface);
@@ -229,16 +247,18 @@
       <h2>Get in touch</h2>
       <p>Have a question, bug report, or feature idea? Send us a message below.</p>
 
-      <div class="form-card" style="padding: 0; overflow: hidden;">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdbIEc9kQY7WlPTZSw67k7z-KQn0KmPjniMfhzHCIlYnO9a2A/viewform?embedded=true"
-          width="100%"
-          height="640"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          style="display:block; border-radius: 16px;"
-        >Loading…</iframe>
+      <div class="form-card">
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Fill out our short support form and we'll get back to you as soon as possible. It only takes a minute.</p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdbIEc9kQY7WlPTZSw67k7z-KQn0KmPjniMfhzHCIlYnO9a2A/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;"
+        >
+          Open Support Form
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
       </div>
     </section>
 
